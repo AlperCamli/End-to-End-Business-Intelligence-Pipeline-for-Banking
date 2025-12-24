@@ -1,0 +1,19 @@
+{
+  "name": "BI Spark Client",
+  "service": "spark-client",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "shutdownAction": "stopCompose",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg",
+        "ClickHouse.clickhouse-client"
+      ]
+    }
+  },
+  "postCreateCommand": "python3 -m pip install --no-cache-dir -r requirements.txt || true"
+}

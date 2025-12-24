@@ -1,0 +1,92 @@
+services:
+  clickhouse:
+    image: clickhouse
+    container_name: app-clickhouse
+    environment:
+      - CLICKHOUSE_DB=bi_dw
+      - CLICKHOUSE_USER=default
+      - CLICKHOUSE_PASSWORD=password
+      - CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
+    ports:
+      - 8123:8123
+      - 9000:9000
+    networks:
+      - bi-net
+    volumes:
+      - chdata:/var/lib/clickhouse
+      - ./clickhouse-init:/docker-entrypoint-initdb.d
+
+  spark-master:
+    image: docker.io/bitnami/spark:3.5
+    container_name: app-spark-master
+    user: root
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark
+    ports:
+      - 7077:7077
+      - 8082:8080
+      
+    networks:
+      - bi-net
+    volumes:
+      - spark-work:/opt/spark/work
+      - ./jars:/opt/spark/jars
+      - master-etl:/etl/
+      - master-data:/opt/spark/data
+
+  spark-worker:
+    image: docker.io/bitnami/spark:3.5
+    container_name: app-spark-worker
+    user: root
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark
+    ports:
+      - 8081:8081
+    networks:
+      - bi-net
+    volumes:
+      - worker-data:/opt/spark/data
+      - ./jars:/opt/spark/jars
+      
+
+  postgres:
+    image: postgres:13
+    container_name: app-postgres
+    environment:
+      - POSTGRES_USER=XXXXXX
+      - POSTGRES_PASSWORD=XXXXXX
+      - POSTGRES_DB=XXXXXX
+    ports:
+      - 5431:5432
+    networks:
+      - bi-net
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d
+    command: [ "postgres", "-c", "wal_level=logical" ]
+
+
+networks:
+  bi-net:
+
+volumes:
+  spark-work:
+  worker-data:
+  master-data:
+  master-etl:
+  jars:
+  pgdata:
+  chdata:
