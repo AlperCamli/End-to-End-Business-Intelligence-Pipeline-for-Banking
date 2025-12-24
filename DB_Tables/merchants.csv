@@ -1,0 +1,55 @@
+merchant_id,merchant_name,category_id,city_id
+1,Quick Point 36,1,52
+2,Urban Kitchen,2,15
+3,Style Bazaar,3,72
+4,Medi Clinic 78,4,61
+5,Rapid Line,5,21
+6,Transit Ride,6,75
+7,Silver Market,7,75
+8,Golden Hub,8,24
+9,Fun Planet 49,9,3
+10,City Cashpoint,10,22
+11,Golden Depot,11,53
+12,Fresh Grocer 81,12,2
+13,Petro Stop 9,1,30
+14,Urban Grill,2,38
+15,Style Outlet 82,3,2
+16,Medi Pharma,4,64
+17,City Line,5,60
+18,Rapid Ride,6,21
+19,Grand Zone,7,33
+20,Silver Stop 5,8,76
+21,Galaxy Planet 73,9,58
+22,Bank Cashpoint,10,22
+23,Prime Express 96,11,49
+24,Daily Grocer,12,59
+25,Petro Station 18,1,42
+26,Anatolia Kitchen,2,60
+27,Mega Bazaar 88,3,80
+28,Care Clinic,4,15
+29,Transit Line 71,5,62
+30,City Line,6,62
+31,Anadolu Category 1 Mağaza,1,47
+32,Karadeniz Category 1 Express,1,62
+33,Ege Category 2 AVM,2,51
+34,Pınar Category 2 Mağaza,2,55
+35,Çınar Category 3 Mağaza,3,64
+36,Anadolu Category 3 Point,3,3
+37,Marmara Category 4 Market,4,51
+38,Karadeniz Category 4 AVM,4,7
+39,Çınar Category 5 Outlet,5,21
+40,Pınar Category 5 Market,5,73
+41,Pınar Category 6 AVM,6,39
+42,Karadeniz Category 6 Point,6,18
+43,Çınar Category 7 Center,7,4
+44,Anadolu Category 7 Express,7,60
+45,Yıldız Category 8 Ticaret,8,14
+46,İç Anadolu Category 8 Plus,8,9
+47,Karadeniz Category 9 Ticaret,9,53
+48,Marmara Category 9 Plus,9,2
+49,Yıldız Category 10 Mağaza,10,60
+50,Güney Category 10 Mağaza,10,71
+51,Çınar Category 11 Plus,11,44
+52,Anadolu Category 11 Express,11,8
+53,Pınar Category 12 Center,12,47
+54,Yıldız Category 12 Mağaza,12,35

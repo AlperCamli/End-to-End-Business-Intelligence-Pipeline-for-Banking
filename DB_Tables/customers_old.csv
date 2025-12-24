@@ -1,0 +1,21 @@
+customer_id,first_name,last_name,date_of_birth,gender,marital_status,education_level,employment_status,job_title,housing,monthly_salary_usd,monthly_passive_income_usd,monthly_rent_in_usd,monthly_rent_out_usd,annual_income,monthly_salary_day,bill_responsible,bills_due_day,is_renter,rent_due_day,credit_score,num_dependents,segment,has_passive_income,has_real_estate_income
+CUST0001,Ayşe,Bolat,1979-06-29,female,married,highschool,employed,Accountant,rent,1604.92,0.0,0.0,340.12,19259.1,2,FALSE,,TRUE,2.0,771,2,mid_career_families,FALSE,FALSE
+CUST0002,Fatma,Balcı,1997-03-04,female,married,highschool,employed,Marketing Specialist,rent,1038.83,0.0,0.0,412.28,12465.94,5,TRUE,6.0,TRUE,8.0,780,0,young_professionals,FALSE,FALSE
+CUST0003,Emre,Topal,1986-04-20,male,married,secondary,employed,Driver,rent,661.4,0.0,0.0,277.16,7936.76,1,TRUE,12.0,TRUE,3.0,658,2,blue_collar,FALSE,FALSE
+CUST0004,Can,Balcı,2005-02-08,male,single,highschool,student,Assistant,rent,383.38,0.0,0.0,205.56,4600.6,5,FALSE,,TRUE,7.0,693,0,young_students,FALSE,FALSE
+CUST0005,Elif,Öztürk,1993-07-10,female,married,primary,employed,Technician,rent,554.43,0.0,0.0,240.84,6653.16,6,TRUE,11.0,TRUE,10.0,691,2,blue_collar,FALSE,FALSE
+CUST0006,Uğur,Kaplan,1995-10-03,male,married,bachelor,employed,Designer,rent,700.5,0.0,0.0,291.48,8406.04,1,FALSE,,TRUE,5.0,707,1,young_professionals,FALSE,FALSE
+CUST0007,Uğur,Öztürk,2000-04-24,male,married,secondary,employed,Operator,rent,534.26,0.0,0.0,215.04,6411.1,3,TRUE,12.0,TRUE,1.0,605,1,blue_collar,FALSE,FALSE
+CUST0008,Kerem,Öztürk,1954-04-27,male,single,highschool,retired,Retired,own,1149.78,0.0,377.86,0.0,18331.78,27,TRUE,14.0,FALSE,,686,0,retirees,FALSE,TRUE
+CUST0009,Buse,Er,1964-10-28,female,married,secondary,employed,Operator,rent,641.55,0.0,0.0,249.46,7698.61,26,TRUE,4.0,TRUE,1.0,666,1,blue_collar,FALSE,FALSE
+CUST0010,Can,Arslan,1957-07-25,male,married,highschool,retired,Retired,own,783.18,0.0,0.0,0.0,9398.13,25,TRUE,4.0,FALSE,,658,1,retirees,FALSE,FALSE
+CUST0011,Buse,Bolat,1995-01-22,female,married,bachelor,employed,Marketing Specialist,family,1011.93,0.0,0.0,0.0,12143.1,5,FALSE,,FALSE,,638,0,young_professionals,FALSE,FALSE
+CUST0012,Emre,Güler,1992-08-26,male,single,bachelor,employed,Software Engineer,rent,1122.86,0.0,0.0,468.98,13474.37,26,TRUE,6.0,TRUE,5.0,748,1,young_professionals,FALSE,FALSE
+CUST0013,Ece,Yıldız,1979-05-04,female,married,master,employed,Project Manager,own,1181.57,439.36,0.0,0.0,19451.05,6,FALSE,,FALSE,,739,2,mid_career_families,TRUE,FALSE
+CUST0014,Uğur,Er,1964-07-27,male,single,secondary,retired,Retired,own,1006.66,0.0,285.36,0.0,15504.23,5,FALSE,,FALSE,,703,0,retirees,FALSE,TRUE
+CUST0015,Mehmet,Engin,2004-12-20,male,single,highschool,unemployed,Intern,family,384.17,0.0,0.0,0.0,4610.0,28,FALSE,,FALSE,,634,0,young_students,FALSE,FALSE
+CUST0016,Zeynep,Bolat,2001-12-14,female,single,highschool,student,University Student,rent,498.24,0.0,0.0,271.94,5978.83,3,FALSE,,TRUE,2.0,608,0,young_students,FALSE,FALSE
+CUST0017,Uğur,Aydın,1959-06-23,male,married,primary,employed,Technician,family,562.96,0.0,0.0,0.0,6755.55,27,TRUE,7.0,FALSE,,677,2,blue_collar,FALSE,FALSE
+CUST0018,Merve,Demir,1981-05-17,female,married,phd,employed,Director,own,2195.33,3105.96,0.0,0.0,63615.5,5,TRUE,3.0,FALSE,,796,1,high_income,TRUE,FALSE
+CUST0019,Emre,Kaya,1999-12-11,male,married,bachelor,employed,Designer,rent,934.16,0.0,0.0,393.73,11209.96,5,FALSE,,TRUE,9.0,732,1,young_professionals,FALSE,FALSE
+CUST0020,Oğuz,Çelik,1968-09-30,male,single,master,employed,Senior Manager,own,4892.05,3381.23,2725.76,0.0,131988.4,26,FALSE,,FALSE,,783,1,high_income,TRUE,TRUE

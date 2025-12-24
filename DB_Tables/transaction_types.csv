@@ -1,0 +1,10 @@
+transaction_type_id,transaction_type_name,is_Transfer,is_Income
+1,purchase,False,False
+2,atm_withdrawal,False,False
+3,bill_payment,False,False
+4,salary,False,True
+5,passive_income,False,True
+6,rent_out,False,False
+7,rent_in,False,True
+8,transfer_out,True,False
+9,transfer_in,True,False

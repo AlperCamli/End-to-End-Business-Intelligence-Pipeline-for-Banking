@@ -1,0 +1,13 @@
+category_id,category_name,is_essential
+1,gas,True
+2,restaurant,False
+3,shopping,False
+4,healthcare,True
+5,transportation,True
+6,public transportation,True
+7,income,True
+8,Bill and Payments,True
+9,Entertainment,False
+10,ATM,False
+11,rent,True
+12,grocery,True
